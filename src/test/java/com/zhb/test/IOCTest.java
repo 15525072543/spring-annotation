@@ -6,8 +6,6 @@ import com.zhb.config.MainConfig2;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
-
-import java.util.ArrayList;
 import java.util.Map;
 
 /**

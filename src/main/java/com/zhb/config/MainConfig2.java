@@ -4,6 +4,7 @@ import com.zhb.bean.Blue;
 import com.zhb.bean.Person;
 import com.zhb.bean.Red;
 import com.zhb.condition.LinuxCondition;
+import com.zhb.condition.MySelector;
 import com.zhb.condition.WindowsCondition;
 import org.springframework.context.annotation.*;
 
@@ -15,7 +16,7 @@ import org.springframework.context.annotation.*;
  */
 @Configuration
 @Conditional(WindowsCondition.class) //表明当满足当前条件时, 给类中所有配置的bean才能生效.
-@Import({Blue.class,Red.class})//@Import 快速导入组件，id默认是组件的全类名
+@Import({MySelector.class})//@Import 快速导入组件，id默认是组件的全类名
 public class MainConfig2 {
 
     /**
