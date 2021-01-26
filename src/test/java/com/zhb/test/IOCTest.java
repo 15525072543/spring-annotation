@@ -25,6 +25,8 @@ public class IOCTest {
             System.out.println(beanDefinitionName);
         }
 
+        Object colorFactoryBean = applicationContext.getBean("&colorFactoryBean");
+        System.out.println("工厂Bean的类型：" + colorFactoryBean.getClass());
     }
 
     @Test

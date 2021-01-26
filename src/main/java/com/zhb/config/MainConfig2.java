@@ -1,8 +1,9 @@
 package com.zhb.config;
 
 import com.zhb.bean.Blue;
-import com.zhb.bean.Person;
+import com.zhb.bean.ColorFactoryBean;
 import com.zhb.bean.Red;
+import com.zhb.bean.Person;
 import com.zhb.condition.LinuxCondition;
 import com.zhb.condition.MyImportBeanDefinitionRegistry;
 import com.zhb.condition.MySelector;
@@ -60,4 +61,8 @@ public class MainConfig2 {
         return  new Person("linus","48");
     }
 
+    @Bean
+    public ColorFactoryBean colorFactoryBean(){
+        return new ColorFactoryBean();
+    }
 }
